@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TermsConditionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar_registerBack"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/termsCondition_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_pinkarrow_back_24">
+        </com.example.myshopnetapp.Utilities.MSNTextView>
+
+        <com.example.myshopnetapp.Utilities.MSNTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/toolbar_title_titleSize">
+        </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar_registerBack">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.example.myshopnetapp.Utilities.MSNTextViewBold
+                android:id="@+id/title001"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="0dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/termsTitle01"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/labelTextView_TextSize">
+            </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+
+            <com.example.myshopnetapp.Utilities.MSNTextView
+                android:id="@+id/textView_titleAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/termsTitleAgreement"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/termsCondition_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title001">
+            </com.example.myshopnetapp.Utilities.MSNTextView>
+
+            <com.example.myshopnetapp.Utilities.MSNTextViewBold
+                android:id="@+id/title002"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/termsTitle02"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/labelTextView_TextSize">
+            </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+
+            <com.example.myshopnetapp.Utilities.MSNTextView
+                android:id="@+id/textView_titlePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/termsTitlePrice"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/termsCondition_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title001">
+            </com.example.myshopnetapp.Utilities.MSNTextView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

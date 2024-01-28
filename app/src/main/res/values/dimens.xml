@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_title_text_size">35sp</dimen>
+    <dimen name="button_background_radius">10dp</dimen>
+
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="logo_width_size">220dp</dimen>
+    <dimen name="logo_height_size">100dp</dimen>
+    <dimen name="mainTitle_textSize">18sp</dimen>
+    <dimen name="edit_textSize">16sp</dimen>
+    <dimen name="edit_padding">16dp</dimen>
+    <dimen name="text_view_clickable">5dp</dimen>
+    <dimen name="forgot_password_textSize">14dp</dimen>
+    <dimen name="button_textSize">18sp</dimen>
+    <dimen name="button_padding">8dp</dimen>
+    <dimen name="labelTextView_TextSize">14sp</dimen>
+
+    <dimen name="toolbar_title_paddingStart">-25dp</dimen>
+    <dimen name="toolbar_title_titleSize">20sp</dimen>
+    <dimen name="text_termsCondition_marginStart">10dp</dimen>
+    <dimen name="text_termsAndCondition_textSize">14sp</dimen>
+    <dimen name="button_paddingTopBottom">8dp</dimen>
+
+    <dimen name="progressDialog_padding">10dp</dimen>
+    <dimen name="progressBar_Size">50dp</dimen>
+    <dimen name="progressBar_marginStart">16dp</dimen>
+    <dimen name="progressBar_textSize">16sp</dimen>
+
+    <dimen name="forgotPassword_titleTextSize">18sp</dimen>
+    <dimen name="forgotPassword_titleDescription_textSize">14sp</dimen>
+
+    <dimen name="termsCondition_textSize">12sp</dimen>
+
+    <dimen name="userImage_backgroundStroke">4dp</dimen>
+    <dimen name="userImage_backgroundRadius">10dp</dimen>
+    <dimen name="profile_userImageSize">150dp</dimen>
+    <dimen name="profile_userImageMarginTop">50dp</dimen>
+    <dimen name="profile_userPhotoMargin">3dp</dimen>
+    <dimen name="profile_radioButtonHeight">40dp</dimen>
+    <dimen name="profile_radioMarginStartEnd">3dp</dimen>
+    <dimen name="gender_radioButtonRadius">5dp</dimen>
+    <dimen name="gender_radioButtonStrokeWidth">1dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="frameLayout_header_imageHeight">200dp</dimen>
+    <dimen name="setting_profileUser_imageSize">150dp</dimen>
+    <dimen name="setting_profileUser_image_marginTop">-75dp</dimen>
+    <dimen name="setting_profileUser_image_margin">3dp</dimen>
+    <dimen name="greyBorder_strokeSize">1dp</dimen>
+    <dimen name="greyBorder_radius">2dp</dimen>
+    <dimen name="setting_editLabel_marginStartEnd">10dp</dimen>
+    <dimen name="setting_editLabel_marginStartBottom">5dp</dimen>
+    <dimen name="setting_editLabel_textSize">14sp</dimen>
+    <dimen name="setting_name_marginTop">25dp</dimen>
+    <dimen name="setting_name_textSize">22sp</dimen>
+    <dimen name="setting_information_marginTop">3dp</dimen>
+    <dimen name="setting_information_textSize">18sp</dimen>
+    <dimen name="setting_addressMargin">16dp</dimen>
+    <dimen name="setting_addressPadding">16dp</dimen>
+    <dimen name="setting_labelAddress_margin">3dp</dimen>
+    <dimen name="setting_labelAddress_textSize">18sp</dimen>
+    <dimen name="setting_button_marginStartEnd">50dp</dimen>
+    <dimen name="setting_button_marginTopBottom">16dp</dimen>
+
+</resources>

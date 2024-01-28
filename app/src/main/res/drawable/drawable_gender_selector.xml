@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true">
+        <shape
+            android:shape="rectangle">
+            <solid
+                android:color="@color/pinkThemeColor">
+            </solid>
+            <corners
+                android:bottomLeftRadius="@dimen/gender_radioButtonRadius"
+                android:topLeftRadius="@dimen/gender_radioButtonRadius"
+                android:bottomRightRadius="@dimen/gender_radioButtonRadius"
+                android:topRightRadius="@dimen/gender_radioButtonRadius">
+            </corners>
+        </shape>
+    </item>
+
+    <item
+        android:state_checked="false">
+        <shape
+            android:shape="rectangle">
+
+            <stroke
+                android:width="@dimen/gender_radioButtonStrokeWidth"
+                android:color="@color/secondaryTextColor">
+            </stroke>
+
+            <corners
+                android:bottomLeftRadius="@dimen/gender_radioButtonRadius"
+                android:topLeftRadius="@dimen/gender_radioButtonRadius"
+                android:bottomRightRadius="@dimen/gender_radioButtonRadius"
+                android:topRightRadius="@dimen/gender_radioButtonRadius">
+            </corners>
+
+        </shape>
+    </item>
+</selector>

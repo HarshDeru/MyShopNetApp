@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sizeShadow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@color/pinkThemeColor"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chooseSize"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@color/colorGrey"
+        app:layout_constraintStart_toStartOf="@+id/sizeShadow"
+        app:layout_constraintTop_toTopOf="@id/sizeShadow"
+        app:layout_constraintEnd_toEndOf="@id/sizeShadow"
+        app:layout_constraintBottom_toBottomOf="@id/sizeShadow">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/textViewSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintStart_toStartOf="@id/chooseSize"
+        app:layout_constraintTop_toTopOf="@id/chooseSize"
+        app:layout_constraintEnd_toEndOf="@id/chooseSize"
+        app:layout_constraintBottom_toBottomOf="@id/chooseSize"
+        android:text="S"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        android:textColor="@color/black">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

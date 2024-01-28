@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background1"
+    tools:context=".Activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="@dimen/logo_width_size"
+        android:layout_height="@dimen/logo_height_size"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/myshopnet_logo"
+        app:tint="@color/whiteThemeColor">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="30dp"
+            android:background="@drawable/customer_text">
+
+            <com.example.myshopnetapp.Utilities.MSNTextViewBold
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="@string/title_activity_login"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/mainTitle_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_email_id"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/editText_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_email_password"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_email">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/editText_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.example.myshopnetapp.Utilities.MSNTextView
+                android:id="@+id/textView_forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/text_view_clickable"
+                android:text="@string/label_forgot_password"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/forgot_password_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+            <com.example.myshopnetapp.Utilities.MSNButton
+            android:id="@+id/button_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingTop="@dimen/edit_padding"
+            android:paddingBottom="@dimen/edit_padding"
+            android:text="@string/button_label_login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_forgotPassword">
+        </com.example.myshopnetapp.Utilities.MSNButton>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_Login">
+
+                <com.example.myshopnetapp.Utilities.MSNTextView
+                android:id="@+id/tv_dont_have_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/text_view_clickable"
+                android:text="@string/don.t_have_an_account"
+                android:textSize="@dimen/labelTextView_TextSize"
+                android:textColor="@color/secondaryTextColor">
+                </com.example.myshopnetapp.Utilities.MSNTextView>
+
+                <com.example.myshopnetapp.Utilities.MSNTextViewBold
+                android:id="@+id/textView_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/text_view_clickable"
+                android:text="@string/register"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="@dimen/labelTextView_TextSize">
+                </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

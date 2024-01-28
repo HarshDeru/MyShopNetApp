@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/colorWhite"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </View>
+
+        <ImageView
+            android:id="@+id/imageViewCartProduct"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@id/viewLine"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            android:src="@color/pinkThemeColor">
+        </ImageView>
+
+        <com.example.myshopnetapp.Utilities.MSNTextViewBold
+            android:id="@+id/textView_ProductNameAddToCart"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Product"
+            android:textSize="@dimen/edit_textSize"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/imageViewCartProduct"
+            app:layout_constraintTop_toTopOf="@id/imageViewCartProduct">
+        </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+
+        <com.example.myshopnetapp.Utilities.MSNTextViewBold
+            android:id="@+id/textView_ProductPriceAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="£0"
+            android:textSize="@dimen/edit_textSize"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/textView_ProductNameAddToCart"
+            app:layout_constraintTop_toBottomOf="@id/textView_ProductNameAddToCart">
+        </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+
+        <ImageView
+            android:id="@+id/imageViewPlusIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageViewMinusIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_minus"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent">
+        </ImageView>
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/textViewProductQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantityNumber"
+            app:layout_constraintTop_toBottomOf="@id/imageViewMinusIcon"
+            app:layout_constraintEnd_toEndOf="@id/imageViewMinusIcon"
+            app:layout_constraintBottom_toTopOf="@id/imageViewPlusIcon"
+            app:layout_constraintStart_toStartOf="@id/imageViewPlusIcon">
+        </com.example.myshopnetapp.Utilities.MSNTextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProductSize"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@color/pinkThemeColor"
+            app:layout_constraintStart_toStartOf="@id/textView_ProductPriceAddToCart"
+            app:layout_constraintTop_toBottomOf="@id/textView_ProductPriceAddToCart">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/textViewProductCartSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantitySize"
+            android:textSize="11sp"
+            android:textColor="@color/whiteThemeColor"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewProductSize"
+            app:layout_constraintTop_toTopOf="@id/imageViewProductSize"
+            app:layout_constraintStart_toStartOf="@id/imageViewProductSize"
+            app:layout_constraintEnd_toEndOf="@id/imageViewProductSize">
+        </com.example.myshopnetapp.Utilities.MSNTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

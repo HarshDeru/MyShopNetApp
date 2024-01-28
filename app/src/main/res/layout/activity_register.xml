@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_registerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_pinkarrow_back_24">
+        </com.example.myshopnetapp.Utilities.MSNTextView>
+
+        <com.example.myshopnetapp.Utilities.MSNTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="35dp"
+            android:text="@string/create_account"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/toolbar_title_titleSize">
+        </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_registerHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_first_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_firstName"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/edit_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_last_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_lastName"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_first_name">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/edit_lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_email_id"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_last_name">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_email_password"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_email">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_baseline_password_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title_confirmPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/editText_hint_confirmPassword"
+                android:textColorHint="@color/secondaryTextColor"
+                app:boxStrokeColor="@color/pinkThemeColor"
+                app:endIconTint="@color/pinkThemeColor"
+                app:hintTextColor="@color/pinkThemeColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_password">
+
+                <com.example.myshopnetapp.Utilities.MSNEditText
+                    android:id="@+id/edit_confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_baseline_password_24"
+                    android:padding="@dimen/edit_padding"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/edit_textSize">
+                </com.example.myshopnetapp.Utilities.MSNEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linerLayout_terms_and_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_confirmPassword">
+                
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_terms_and_Condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false">
+                </androidx.appcompat.widget.AppCompatCheckBox>
+
+                <com.example.myshopnetapp.Utilities.MSNTextView
+                    android:id="@+id/tv_terms_and_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_termsCondition_marginStart"
+                    android:text="@string/agree_termAndConditions"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="@dimen/text_termsAndCondition_textSize">
+                </com.example.myshopnetapp.Utilities.MSNTextView>
+
+                <com.example.myshopnetapp.Utilities.MSNTextViewBold
+                    android:id="@+id/textView_terms_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/text_view_clickable"
+                    android:text="@string/termsConditions"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/text_termsAndCondition_textSize">
+                </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+
+            </LinearLayout>
+
+            <com.example.myshopnetapp.Utilities.MSNButton
+                android:id="@+id/button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="@dimen/button_padding"
+                android:paddingBottom="@dimen/button_padding"
+                android:text="@string/button_label_register"
+                android:textSize="@dimen/button_textSize"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linerLayout_terms_and_condition">
+            </com.example.myshopnetapp.Utilities.MSNButton>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_register">
+
+                <com.example.myshopnetapp.Utilities.MSNTextView
+                    android:id="@+id/tv_already_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/text_view_clickable"
+                    android:text="@string/already_have_account"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="@dimen/labelTextView_TextSize">
+                </com.example.myshopnetapp.Utilities.MSNTextView>
+
+                <com.example.myshopnetapp.Utilities.MSNTextViewBold
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/text_view_clickable"
+                    android:text="@string/login"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/labelTextView_TextSize">
+                </com.example.myshopnetapp.Utilities.MSNTextViewBold>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

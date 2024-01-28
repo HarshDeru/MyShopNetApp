@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteThemeColor"
+    android:elevation="0dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <ImageView
+            android:id="@+id/imageBestDeal"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp" />
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/textView_deal_productName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Nike Tracksuit"
+            app:layout_constraintStart_toEndOf="@id/imageBestDeal"
+            app:layout_constraintTop_toTopOf="@id/imageBestDeal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="9sp"/>
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/textView_oldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="£150"
+            app:layout_constraintTop_toBottomOf="@id/textView_deal_productName"
+            app:layout_constraintStart_toEndOf="@id/textView_newPrice"
+            android:textColor="@color/pinkThemeColor"
+            android:textSize="12sp"
+            android:layout_marginStart="8dp"
+            />
+
+        <com.example.myshopnetapp.Utilities.MSNTextView
+            android:id="@+id/textView_newPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="100"
+            app:layout_constraintStart_toStartOf="@id/textView_deal_productName"
+            app:layout_constraintTop_toBottomOf="@id/textView_deal_productName"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+        <com.example.myshopnetapp.Utilities.MSNButton
+            android:id="@+id/button_viewProduct"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:background="@drawable/button_background"
+            android:text="View"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/textView_deal_productName"
+            app:layout_constraintTop_toTopOf="@id/textView_deal_productName"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
